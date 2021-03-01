@@ -27,7 +27,7 @@ summaryLength = 30
   homepage_button_link = '/docs'
   homepage_button_text = 'Read The Docs'
   homepage_intro = 'Heytaco Anywhere is 3rd party plugin of Heytaco.'
-  homepage_image = '/images/taco.jpg'
+  # homepage_image = '/images/taco.jpg'
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true

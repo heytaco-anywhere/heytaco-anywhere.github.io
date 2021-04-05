@@ -49,13 +49,13 @@ The Heytaco Anywhere server is configured using environment variables. This arti
 
 **HEYTACO_ANYWHERE_SLACK_CHANNEL**: Required string value provides the general slack channel to post the message. This value should be the channel id, not the name. Check [here](https://stackoverflow.com/questions/40940327/what-is-the-simplest-way-to-find-a-slack-team-id-and-a-channel-id).
 
-**HEYTACO_ANYWHERE_HEYTACO_CLIENT_ID**: Required string value provides the client id of Slack App.
+**HEYTACO_ANYWHERE_SLACK_CLIENT_ID**: Required string value provides the client id of Slack App.
 
-**HEYTACO_ANYWHERE_HEYTACO_CLIENT_SECRET**: Required string value provides the client secret of Slack App.
+**HEYTACO_ANYWHERE_SLACK_CLIENT_SECRET**: Required string value provides the client secret of Slack App.
 
-**HEYTACO_ANYWHERE_SERVICE_CLIENT_ID**: Required string value provides the client id of Github OAuth App.
+**HEYTACO_ANYWHERE_GITHUB_CLIENT_ID**: Required string value provides the client id of Github OAuth App.
 
-**HEYTACO_ANYWHERE_SERVICE_CLIENT_SECRET**: Required string value provides the client secret of Github OAuth App.
+**HEYTACO_ANYWHERE_GITHUB_CLIENT_SECRET**: Required string value provides the client secret of Github OAuth App.
 
 ### Step 6: Start the server
 
@@ -77,5 +77,5 @@ $ docker run \
   --restart=always \
   --detach=true \
   --name=heytaco-anywhere \
-  heytaco-anywhere/heytaco-anywhere:0.1
+  heytacoanywhere/heytaco-anywhere:0.1
 ```

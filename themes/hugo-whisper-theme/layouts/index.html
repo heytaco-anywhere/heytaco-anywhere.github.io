@@ -1,5 +1,7 @@
 {{ define "title" }}{{ .Site.Title }}{{ end}}
-{{ define "header_css" }}{{ end }}
+{{ define "header_css" }}
+  <link type="text/css" rel="stylesheet" href="/adp/adp.min.css">
+{{ end }}
 {{ define "body_classes" }}page-home{{ end }}
 {{ define "header_classes" }}{{ end }}
 
@@ -53,4 +55,9 @@
 {{ end }}
 
 {{ define "footer_js" }}
+  {{/* 
+  ADP plugin
+  https://bilalshareef.github.io/animate-display-property/index.html 
+  */}}
+  <script type="text/javascript" src="/adp/adp.min.js"></script>
 {{ end }}

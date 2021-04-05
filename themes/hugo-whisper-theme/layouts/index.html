@@ -1,5 +1,7 @@
 {{ define "title" }}{{ .Site.Title }}{{ end}}
-{{ define "header_css" }}{{ end }}
+{{ define "header_css" }}
+  <link type="text/css" rel="stylesheet" href="/adp/adp.min.css">
+{{ end }}
 {{ define "body_classes" }}page-home{{ end }}
 {{ define "header_classes" }}{{ end }}
 
@@ -17,7 +19,7 @@
 
 {{ define "main" }}
 <div class="strip">
-  <div class="container pt-4 pb-16">
+  <div class="container pt-4 pb-6">
     <div class="row">
       <div class="col-12">
         <h1 class="title">{{ .Title | default .Site.Title }}</h1>
@@ -36,21 +38,40 @@
   </div>
 </div>
 
-{{ if .Site.Params.homepage_image }}
+{{/* custom html */}}
 <div class="strip">
-  <div class="container pt-4 pb-4">
-    <div class="row justify-content-center">
+  <div class="container pt-4 pb-8" >
+    <div class="row justify-content-center adp-hide" id="github-slack">
       <div class="col-12 col-md-10">
-        <div class="terminal">
-          <img src="{{ .Site.Params.homepage_image | relURL}}" />
-        </div>
+        <img src="/images/github-slack.png" style="max-width: 100%"/>
+      </div>
+    </div>
+    <div class="row justify-content-center adp-hide" id="atlassian-slack">
+      <div class="col-12 col-md-10">
+        <img src="/images/atlassian-slack.png" style="max-width: 100%"/>
       </div>
     </div>
   </div>
 </div>
-{{ end }}
 
 {{ end }}
 
 {{ define "footer_js" }}
+  {{/* 
+  ADP plugin
+  https://bilalshareef.github.io/animate-display-property/index.html 
+  */}}
+  <script type="text/javascript" src="/adp/adp.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      setTimeout(() => {
+        var github = document.querySelector("#github-slack")
+        ADP.show(github, 'slide-down')
+      }, 500)
+      setTimeout(() => {
+        var github = document.querySelector("#atlassian-slack")
+        ADP.show(github, 'slide-down')
+      }, 1500)
+    });
+  </script>
 {{ end }}

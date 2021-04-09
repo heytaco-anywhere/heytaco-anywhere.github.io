@@ -11,7 +11,7 @@ Heytaco Anywhere is connected by OAuth. It is necessary to configure Slack or Mi
 * [Slack](#slack)
 * [Microsoft Teams](#microsoft-teams)
 * [Github](#github)
-* [Atlassian](#atlassian)
+* [Jira](#jira)
 
 
 ## Slack
@@ -52,8 +52,6 @@ Then install the App into the workspace by clicking **Install to Workspace**. ([
 
 ## Github 
 
-Github provides OAuth App & Webhook. It makes Heytaco Anywhere reads Github users and listen to events.
-
 ### Step 1: Create App
 
 In the organization, move to **Settings > Developer Settings > OAuth settings** to configure OAuth. 
@@ -77,25 +75,23 @@ figure) Create Github Webhook
 ![github-create-webhook](/images/github-create-webhook.png)
 
 
-## Atlassian
-
-Github provides OAuth App & Webhook. It makes Heytaco Anywhere reads Github user and listen to events.
+## Jira
 
 ### Step 1: Create App
 
-To connect with Atlassian, you have to Atlassian App and make it public. Let's move to the [Atlassian Developer Console](https://developer.atlassian.com/console/myapps/) and create a new App. The App requires configuring the Callback URL and Permissions; The callback URL has to be `https://YOUR_HOST/atlassian/signin`; The `User identity API` has to be added. (reference [JIRA OAuth](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/))
+To connect with Jira, you have to create App in Atlassian Developer and make it public. Let's move to the [Atlassian Developer Console](https://developer.atlassian.com/console/myapps/) and create a new App. For OAuth, you have to configure the Callback URL and Permissions; The Callback URL has to be `https://YOUR_HOST/jira/signin` and it can be configured in the *Authorization* section; Permissions requires `View user profiles` and `View Jira Issue data` of Jira, it can be configured in the *Permissions* section. ([JIRA oAuth](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/))
 
-To make your teammates access the App for authentication. You have to the App public by requesting to [Developer Service Desk](https://ecosystem.atlassian.net/servicedesk/customer/portal/14).
+To make your teammates access the App for authentication. You can make the App public by requesting to [Developer Service Desk](https://ecosystem.atlassian.net/servicedesk/customer/portal/14).
 
-figure) Atlassian Authorization
+figure) App Authorization
 
 ![atlassian-app-authorization](/images/atlassian-app-authorization.png)
 
-figure) Atlassian Permissions
+figure) App Permissions
 
 ![atlassian-app-permissions](/images/atlassian-app-permissions.png)
 
-figure) Atlassian Distribution
+figure) App Distribution
 
 ![atlassian-app-distribution](/images/atlassian-app-distribution.png)
 
@@ -103,7 +99,7 @@ figure) Atlassian Distribution
 
 In your JIRA workspace, move to **Settings > System > WebHooks**.
 
-After click Create a Webhook button, you have to fill out the URL with `https://YOUR_HOST/atlassian/hooks`, and click the Comment `created` event enabled.
+After click Create a Webhook button, you have to fill out the URL with `https://YOUR_HOST/jira/hooks`, and click the Comment `created` event enabled.
 
 ![atlassian-app-webhook](/images/atlassian-app-webhook.png)
 

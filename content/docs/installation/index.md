@@ -1,7 +1,7 @@
 ---
 title: 'Installation'
 date: 2019-02-11T19:27:37+10:00
-weight: 4
+weight: 5
 ---
 
 Basically, Heytaco Anywhere is self-managed service. So it is necesary to install in your infrastructure.

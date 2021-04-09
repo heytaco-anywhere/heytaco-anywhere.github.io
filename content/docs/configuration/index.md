@@ -1,7 +1,7 @@
 ---
 title: 'Configuration'
 date: 2019-02-11T19:27:37+10:00
-weight: 3
+weight: 4
 ---
 
 Heytaco Anywhere is connected by OAuth. It is necessary to configure Slack or Microsoft Teams. And also you need to configure a service to communicate with HeyTaco!.

@@ -12,6 +12,4 @@ Relase note of Heytaco Anywhere. You can check what is added, fixed and removed.
 
 #### Added
 
-* feat: Support Slack. 
-* feat: Support Github to connect with HeyTaco!
-* feat: Support Atlassian to connect with HeyTaco!
+* ✨ Initialize the project: Slack, Github, Jira supported.

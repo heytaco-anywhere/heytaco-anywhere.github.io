@@ -20,7 +20,7 @@ Slack supports App people connect their tools and work more efficiently within S
 
 ### Step 0: Create a new channel
 
-To send the 🌮 message, it needs a new slack channel. Let's add a new channle, such as "taco", and get the channel id. Check [here](https://stackoverflow.com/questions/40940327/what-is-the-simplest-way-to-find-a-slack-team-id-and-a-channel-id).
+To send the 🌮 message, it needs a new slack channel. Let's add a new channle, such as "taco", and get the channel id in the browser. Check [here](https://stackoverflow.com/questions/40940327/what-is-the-simplest-way-to-find-a-slack-team-id-and-a-channel-id).
 
 figure) Get channel id
 

@@ -4,13 +4,13 @@ date: 2019-02-11T19:27:37+10:00
 weight: 3
 ---
 
-Let's install Heytaco Anywhere. In this example, we're going to connect Heytaco(Slack) with Github.
+Let's install Heytaco Anywhere. In this example, we're going to connect Slack with Github.
 
 ### Step 1: Create HeyTaco! App
 
-To send  🌮  in other services, we need to create a new HeyTaco! application that interacts with HeyTaco!.  At [here](https://www.heytaco.chat/team/apps/create), you can create a new App with the name Heytaco Anywhere like the following:
+To send  🌮  in other services, we need to create a new HeyTaco! App that interacts with HeyTaco!.  At [here](https://www.heytaco.chat/team/apps/create), you can create a new App with the name Heytaco Anywhere like the following:
 
-Download the [Heytaco Anywhere Icon](/images/taco.png).
+Note that you need the `admin` role to create a new App.
 
 figure) Create HeyTaco! App
 
@@ -19,7 +19,6 @@ figure) Create HeyTaco! App
 figure) List HeyTaco! App
 
 ![Heytaco Apps](/images/heytaco-apps.png)
-
 
 ### Step 2: Configuring Slack 
 
@@ -39,7 +38,7 @@ $ docker pull heytacoanywhere/heytaco-anywhere:0.1
 
 ### Step 5: Configuration
 
-The Heytaco Anywhere server is configured using environment variables. This article references a subset of configuration options, defined below. See [Configuration](/docs/reference) for a complete list of configuration options.
+The Heytaco Anywhere server is configured using environment variables. This article references a subset of configuration options, defined below. See [Reference](/docs/reference) for a complete list of configuration options.
 
 **HEYTACO_ANYWHERE_SERVER_HOST**: Required string value provides your external hostname.
 
@@ -47,15 +46,15 @@ The Heytaco Anywhere server is configured using environment variables. This arti
 
 **HEYTACO_ANYWHERE_HEYTACO_APP_SECRET**: Required string value provides your HeyTaco! App secret.
 
-**HEYTACO_ANYWHERE_SLACK_CHANNEL**: Required string value provides the general slack channel to post the message. This value should be the channel id, not the name. Check [here](https://stackoverflow.com/questions/40940327/what-is-the-simplest-way-to-find-a-slack-team-id-and-a-channel-id).
+**HEYTACO_ANYWHERE_SLACK_CHANNEL**: String value provides the general slack channel to post the message. This value should be the channel id, not the name. 
 
-**HEYTACO_ANYWHERE_SLACK_CLIENT_ID**: Required string value provides the client id of Slack App.
+**HEYTACO_ANYWHERE_SLACK_CLIENT_ID**: String value provides the client id of Slack App.
 
-**HEYTACO_ANYWHERE_SLACK_CLIENT_SECRET**: Required string value provides the client secret of Slack App.
+**HEYTACO_ANYWHERE_SLACK_CLIENT_SECRET**: String value provides the client secret of Slack App.
 
-**HEYTACO_ANYWHERE_GITHUB_CLIENT_ID**: Required string value provides the client id of Github OAuth App.
+**HEYTACO_ANYWHERE_GITHUB_CLIENT_ID**: String value provides the client id of Github OAuth App.
 
-**HEYTACO_ANYWHERE_GITHUB_CLIENT_SECRET**: Required string value provides the client secret of Github OAuth App.
+**HEYTACO_ANYWHERE_GITHUB_CLIENT_SECRET**: String value provides the client secret of Github OAuth App.
 
 ### Step 6: Start the server
 
@@ -63,15 +62,15 @@ The server container can be started with the below command. The container is con
 
 ```shell
 $ docker run \
-  --volume=/var/lib/heytaco-anywhere:/app \
+  --volume=/var/lib/heytaco-anywhere:/data \
   --env=HEYTACO_ANYWHERE_SERVER_HOST={{HEYTACO_ANYWHERE_SERVER_HOST}} \
   --env=HEYTACO_ANYWHERE_SERVER_PROTO={{HEYTACO_ANYWHERE_SERVER_PROTO}} \
   --env=HEYTACO_ANYWHERE_HEYTACO_APP_SECRET={{HEYTACO_ANYWHERE_HEYTACO_APP_SECRET}} \
-  --env=HEYTACO_ANYWHERE_HEYTACO_CHANNEL={{HEYTACO_ANYWHERE_HEYTACO_CHANNEL}} \
-  --env=HEYTACO_ANYWHERE_HEYTACO_CLIENT_ID={{HEYTACO_ANYWHERE_HEYTACO_CLIENT_ID}} \
-  --env=HEYTACO_ANYWHERE_HEYTACO_CLIENT_SECRET={{HEYTACO_ANYWHERE_HEYTACO_CLIENT_SECRET}} \
-  --env=HEYTACO_ANYWHERE_SERVICE_CLIENT_ID={{HEYTACO_ANYWHERE_SERVICE_CLIENT_ID}} \
-  --env=HEYTACO_ANYWHERE_SERVICE_CLIENT_SECRET={{HEYTACO_ANYWHERE_SERVICE_CLIENT_SECRET}} \
+  --env=HEYTACO_ANYWHERE_SLACK_CHANNEL={{HEYTACO_ANYWHERE_SLACK_CHANNEL}} \
+  --env=HEYTACO_ANYWHERE_SLACK_CLIENT_ID={{HEYTACO_ANYWHERE_SLACK_CLIENT_ID}} \
+  --env=HEYTACO_ANYWHERE_SLACK_CLIENT_SECRET={{HEYTACO_ANYWHERE_SLACK_CLIENT_SECRET}} \
+  --env=HEYTACO_ANYWHERE_GITHUB_CLIENT_ID={{HEYTACO_ANYWHERE_GITHUB_CLIENT_ID}} \
+  --env=HEYTACO_ANYWHERE_GITHUB_CLIENT_SECRET={{HEYTACO_ANYWHERE_GITHUB_CLIENT_SECRET}} \
   --publish=80:8080 \
   --publish=443:8080 \
   --restart=always \

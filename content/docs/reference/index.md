@@ -26,11 +26,11 @@ Required string value provides your HeyTaco! App secret. *You can get the secret
 
 **HEYTACO_ANYWHERE_WEBHOOK_SECRET**
 
- String value provides the signing secret. *It is used to check the signature is valid or not.* It doesn't check the signature if you don't set up.
+String value provides the signing secret. *It is used to check the signature is valid or not.* It doesn't check the signature if you don't set up.
 
 **HEYTACO_ANYWHERE_SLACK_CHANNEL** 
 
-String value is the slack channel id. *It is used to post the message. This value should be the channel id, not the name.* Check [here](https://stackoverflow.com/questions/40940327/what-is-the-simplest-way-to-find-a-slack-team-id-and-a-channel-id).
+String value is the slack channel id. *It is used to post the message. This value should be the channel id, not the name.* 
 
 **HEYTACO_ANYWHERE_SLACK_CLIENT_ID** 
 

@@ -37,12 +37,12 @@ summaryLength = 10
     meta_description = "Heytaco Anywhere is 3rd party plugin of Heytaco."
     meta_og_title = "Heytaco Anywhere"
     meta_og_type = "website"
-    meta_og_url = "https://hugo-whisper.netlify.app"
-    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
+    meta_og_url = "https://heytaco-anywhere.chat"
+    meta_og_image = "https://heytaco-anywhere.chat/images/site.png"
     meta_og_description = "Heytaco Anywhere is 3rd party plugin of Heytaco."
     meta_twitter_card = "summary"
-    meta_twitter_site = "@zerostaticio"
-    meta_twitter_creator = "@zerostaticio"
+    meta_twitter_site = "@HeytacoA"
+    meta_twitter_creator = "@HeytacoA"
 
   [params.logo]
       mobile = "/images/taco.png"

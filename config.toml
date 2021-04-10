@@ -31,7 +31,7 @@ summaryLength = 10
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true
 
-  mainSections = ["docs", "price", "privacy"]
+  mainSections = ["docs", "price", "privacy", "support"]
 
   [params.homepage_meta_tags]
     meta_description = "Heytaco Anywhere is 3rd party plugin of Heytaco."

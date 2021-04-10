@@ -14,7 +14,7 @@ Heytaco Anywhere expands HeyTaco! to other services, not only Slack and Teams. B
 
 ### How does it works? 
 
-For example, if you want to send 🌮  in the pull request of Github, leave the comment with 🌮 . It's just all! 
+For example, if you want to send 🌮  in the pull request of Github, leave the comment with 🌮 . That's all! 
 
 figure) Github review comment
 

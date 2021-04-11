@@ -53,3 +53,4 @@ summaryLength = 10
   [params.logo]
       mobile = "/images/taco.png"
       standard  = "/images/taco.png"
+

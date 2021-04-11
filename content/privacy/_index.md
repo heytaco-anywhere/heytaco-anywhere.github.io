@@ -1,7 +1,7 @@
 ---
 title: 'Privacy Policy'
 date: 2019-02-11T19:27:37+10:00
-weight: 3
+weight: 1
 ---
 
 At Heytaco Anywhere, we take the privacy and security of your information seriously. This privacy policy will explain how we collect, use and share your personal information, and how you may exercise your rights. This Privacy Policy applies to the Heytaco Anywhere websites (“Websites”) and Self-managed products (“Self-managed”) .

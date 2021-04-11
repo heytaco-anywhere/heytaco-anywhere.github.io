@@ -22,7 +22,13 @@ summaryLength = 10
     url = "/docs/"
     weight = 2
 
+[[menu.main]]
+    name = "Pricing"
+    url = "/pricing/"
+    weight = 3
+
 [params]
+  license_url = "https://license.heytaco-anywhere.chat/api/subscribe"
   google_analytics_id=""
   homepage_button_link = '/docs'
   homepage_button_text = 'Read The Docs'
@@ -31,7 +37,7 @@ summaryLength = 10
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true
 
-  mainSections = ["docs", "price", "privacy", "support"]
+  mainSections = ["docs", "pricing", "privacy", "support"]
 
   [params.homepage_meta_tags]
     meta_description = "Heytaco Anywhere is 3rd party plugin of Heytaco."

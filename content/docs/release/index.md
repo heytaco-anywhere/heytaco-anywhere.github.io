@@ -8,6 +8,12 @@ Relase note of Heytaco Anywhere. You can check what is added, fixed and removed.
 
 ## Release Note
 
+### v0.1.1
+
+#### Fixed
+
+* 🐛 fix the default value of `HEYTACO_ANYWHERE_STORE_SOURCE`(i.e. `/data/sqlite3.db`).
+
 ### v0.1.0
 
 #### Added

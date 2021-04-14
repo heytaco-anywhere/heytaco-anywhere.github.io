@@ -81,7 +81,7 @@ figure) Create Github Webhook
 
 To connect with Jira, you have to create App in Atlassian Developer and make it public. Let's move to the [Atlassian Developer Console](https://developer.atlassian.com/console/myapps/) and create a new App. For OAuth, you have to configure the Callback URL and Permissions; The Callback URL has to be `https://YOUR_HOST/jira/signin` and it can be configured in the *Authorization* section; Permissions requires `View user profiles` and `View Jira Issue data` of Jira, it can be configured in the *Permissions* section. ([JIRA oAuth](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/))
 
-To make your teammates access the App for authentication. You can make the App public by requesting to [Developer Service Desk](https://ecosystem.atlassian.net/servicedesk/customer/portal/14).
+To make your teammates access the App for authentication you have to make the App public. 
 
 figure) App Authorization
 

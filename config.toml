@@ -29,7 +29,7 @@ summaryLength = 10
 
 [params]
   license_url = "https://license.heytaco-anywhere.chat/api/subscribe"
-  google_analytics_id=""
+  google_analytics_id="G-JQFVP2G2M5"
   homepage_button_link = '/docs'
   homepage_button_text = 'Read The Docs'
   homepage_intro = 'Heytaco Anywhere is 3rd party plugin of Heytaco.'

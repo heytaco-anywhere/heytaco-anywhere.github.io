@@ -22,7 +22,13 @@ Required string value provides your external protocol scheme. This value should 
 
 **HEYTACO_ANYWHERE_HEYTACO_APP_SECRET** 
 
-Required string value provides your HeyTaco! App secret. *You can get the secret after creating HeyTaco! App* Here is the [link](https://www.heytaco.chat/team/apps/create) to create.
+Required slice of string value provides your HeyTaco! App secret. The server select one of secrets to issue tacos. *Secrets are separated by `,`.*
+
+```
+HEYTACO_ANYWHERE_HEYTACO_APP_SECRET=SECRET_1,SECRET_2
+```
+
+*You can get the secret after creating HeyTaco! App.* Here is the [link](https://www.heytaco.chat/team/apps/create) to create.
 
 **HEYTACO_ANYWHERE_WEBHOOK_SECRET**
 

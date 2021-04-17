@@ -8,10 +8,21 @@ Relase note of Heytaco Anywhere. You can check what is added, fixed and removed.
 
 ## Release Note
 
+### v0.1.6
+
+**Fixed**
+
+* 🛠  Fix type of `HEYTACO_ANYWHERE_HEYTACO_APP_SECRET` slice for enough tacos.
+
 ### v0.1.5
 
-* 🐛  Change the length of access_token for Jira.
+**Added**
+
 * ✨  Block self-taco to prevent abusing.
+
+**Fixed**
+
+* 🐛  Change the length of access_token for Jira.
 
 ### v0.1.4
 
@@ -23,7 +34,7 @@ Relase note of Heytaco Anywhere. You can check what is added, fixed and removed.
 
 **Fixed**
 
-* 🛠 Enable `mysql`, `postgres`.
+* 🐛 Import `mysql`, `postgres` packages.
 
 
 ### v0.1.2

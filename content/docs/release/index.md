@@ -8,6 +8,12 @@ Relase note of Heytaco Anywhere. You can check what is added, fixed and removed.
 
 ## Release Note
 
+### v0.1.7
+
+**Fixed**
+
+* 🛠  Change the user is passed through OAuth twice for the `chat:write` scope.
+
 ### v0.1.6
 
 **Fixed**

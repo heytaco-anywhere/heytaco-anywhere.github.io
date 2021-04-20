@@ -34,7 +34,7 @@ Firstly, we have to create [Slack App](https://api.slack.com/apps). Let's click 
 
 ### Step 2: Set up App
 
-After creating App let's move to the **OAuth & Permissions** section. In this section, we need to set up the *redirect URLs* and *scopes*. Firstly, let's add a new redirect URL with the `https://YOUR_HOST/slack/signin` (or `http://YOUR_HOST/slack/signin`) format; secondly, add the `identity.basic` into the user token scopes.
+After creating App let's move to the **OAuth & Permissions** section. In this section, we need to set up the *redirect URLs* and *scopes*. Firstly, let's add a new redirect URL with the `https://YOUR_HOST/slack/signin` (or `http://YOUR_HOST/slack/signin`) format; secondly, add the `identity.basic` scope and the `chat:write` scope into the user token scopes.
 
 figure) Slack Redirect URLS
 
@@ -43,8 +43,6 @@ figure) Slack Redirect URLS
 figure) Slack Scope
 
 ![slack-scope](/images/slack-scope.png)
-
-Then install the App into the workspace by clicking **Install to Workspace**. ([Slack Doc](https://api.slack.com/authentication/basics#start))
 
 ## Microsoft Teams
 

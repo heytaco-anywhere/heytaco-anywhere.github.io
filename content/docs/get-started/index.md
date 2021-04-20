@@ -78,3 +78,9 @@ $ docker run \
   --name=heytaco-anywhere \
   heytacoanywhere/heytaco-anywhere:0.1
 ```
+
+### Step 7: Connect services
+
+Now, you can connect HeyTaco! with other services, move to the `/` page and click the `connect` button.
+
+![index-page](/images/index-page.png)

@@ -1,4 +1,4 @@
-baseURL = "heytaco-anywhere.chat"
+baseURL = "https://heytaco-anywhere.chat"
 languageCode = "en-us"
 title = "Heytaco Anywhere 🌮"
 themesDir = "themes"

@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "heytaco-anywhere.chat/"
 languageCode = "en-us"
 title = "Heytaco Anywhere 🌮"
 themesDir = "themes"
@@ -54,3 +54,4 @@ summaryLength = 10
       mobile = "/images/taco.png"
       standard  = "/images/taco.png"
 
+[sitemap]

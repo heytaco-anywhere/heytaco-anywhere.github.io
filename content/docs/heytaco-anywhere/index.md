@@ -8,7 +8,7 @@ Heytaco Anywhere is the 3rd party App of [HeyTaco!](https://www.heytaco.chat/how
 
 ### What is Heytaco Anywhere?
 
-[HeyTaco!](https://www.heytaco.chat/) is a great tool; it sparks conversations and builds stronger relationships by giving 🌮 in Slack and Microsoft teams. But all conversations don't occur only in Slack and Teams. In many cases, it happens in other services; for engineers, Github (or Gitlab) is usually one of the places to discuss; for business managers, Jira is one of the places to debate. 
+[HeyTaco!](https://www.heytaco.chat/how) is a great tool; it sparks conversations and builds stronger relationships by giving 🌮 in Slack and Microsoft teams. But all conversations don't occur only in Slack and Teams. In many cases, it happens in other services; for engineers, Github (or Gitlab) is usually one of the places to discuss; for business managers, Jira is one of the places to debate. 
 
 **Heytaco Anywhere expands HeyTaco! to other services, not only Slack and Teams.** By expand 🌮 to Github, Jira, and other services, eventually, it spread fun and celebrated to all the places. 
 

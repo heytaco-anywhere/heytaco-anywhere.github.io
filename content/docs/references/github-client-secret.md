@@ -1,0 +1,7 @@
+### HEYTACO_ANYWHERE_GITHUB_CLIENT_SECRET
+
+String value provides the client secret of Github OAuth App.
+
+```
+HEYTACO_ANYWHERE_GITHUB_CLIENT_SECRET=YOUR_CLIENT_SECRET
+```
